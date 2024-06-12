@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: repeating-radial-gradient(
+    circle at center center,
+    rgb(31, 31, 31) 0px,
+    rgb(31, 31, 31) 33px,
+    rgb(26, 26, 26) 33px,
+    rgb(26, 26, 26) 79px,
+    rgb(20, 20, 20) 79px,
+    rgb(20, 20, 20) 88px
+  );
+  background-size: 56px 56px;
+  font-family: "Nunito", sans-serif !important;
+  font-optical-sizing: auto;
+  /* font-weight: 500; */
+  font-style: normal;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
