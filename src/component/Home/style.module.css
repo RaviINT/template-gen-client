@@ -50,6 +50,13 @@
   align-items: center;
   /* border: 1px solid red; */
 }
+.drBox{
+  width: 60% !important;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
 .inputBox div {
   width: 40%;
   font-size: 16px;
@@ -69,6 +76,17 @@
 }
 .inputBox input:focus {
   outline: none;
+}
+.drBox input{
+  width: 100%;
+  /* border: 1px solid red; */
+  font-size: 17px;
+  margin-top: 5px;
+  border: 1px solid #dddddd;
+  background-color: #fdfcfd;
+  border-radius: 4px;
+  padding: 10px 10px;
+  margin-left: -40px;
 }
 .btn {
   margin: 10px;
@@ -97,4 +115,8 @@
     width: 95%;
     margin: auto;
   }
+  .drBox input{
+    margin-left: -10px;
+  }
+
 }

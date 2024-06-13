@@ -140,7 +140,10 @@ function Home() {
         <form onSubmit={handleFormSubmit} className={styles.form}>
           <div className={styles.inputBox}>
             <div>Doctor's Name:</div>
-            <input required type="text" name="doctorName" value={values.doctorName} onChange={handleChange} />
+            <div className={styles.drBox}>
+              <div>Dr.</div>
+              <input required type="text" name="doctorName" value={values.doctorName} onChange={handleChange} />
+            </div>
           </div>
 
           <div className={styles.inputBox}>

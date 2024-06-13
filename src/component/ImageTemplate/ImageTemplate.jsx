@@ -16,7 +16,7 @@ function ImageTemplate({ templateList, handleCarosoulChange, imageTemplateIndex,
               />
               <div className={styles.heading}>#Doctor'sDay</div>
               <div className={styles.text}>
-                On National Doctor's Day, I {values.userName} want to dedicate my #SecondBirthDate {values.date} to Dr. {values.doctorName} for giving
+                On National Doctor's Day, I, {values.userName} want to dedicate my #SecondBirthDate {values.date} to Dr. {values.doctorName} for giving
                 me a second chance at life. You helped me overcome my health challenge, and for that, I will be forever grateful. Happy Doctor's Day!
                 Your dedication and care mean the world to me.
               </div>
