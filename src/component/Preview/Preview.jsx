@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./style.module.css";
-import Loader from "../Loader/Loader";
 import DwnButton from "../Button/Button";
-function Preview({ url, myDivRef }) {
+function Preview() {
+  const url = localStorage.getItem("GreetingVideo");
   const shareLink = async () => {
     let shareData = {
       text: "#SecondBirthDate",
@@ -82,28 +82,22 @@ function Preview({ url, myDivRef }) {
     }
   };
   return (
-    <div className={styles.container} ref={myDivRef}>
+    <div className={styles.container}>
       <h2 className={styles.heading}>Preview</h2>
-      {url ? (
-        <div className={styles.main}>
-          <div className={styles.left}>
-            <video width="100%" height="100%" autoPlay controls>
-              <source src={url} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div className={styles.right}>
-            <DwnButton text="Download" onClick={downloadVideo} />
-            <DwnButton text="Share Link" onClick={shareLink} />
-            <DwnButton text="Share Greetings" onClick={shareGreetings} />
-          </div>
+
+      <div className={styles.main}>
+        <div className={styles.left}>
+          <video width="100%" height="100%" autoPlay controls>
+            <source src={url} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
-      ) : (
-        <div className={styles.loaderBox}>
-          <div className={styles.loadingMsg}>Generating your video...</div>
-          <Loader />
+        <div className={styles.right}>
+          <DwnButton text="Download" onClick={downloadVideo} />
+          <DwnButton text="Share Link" onClick={shareLink} />
+          <DwnButton text="Share Greetings" onClick={shareGreetings} />
         </div>
-      )}
+      </div>
     </div>
   );
 }
