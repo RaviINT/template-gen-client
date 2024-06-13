@@ -40,3 +40,18 @@
   align-items: center;
   justify-content: space-evenly;
 }
+@media (max-width: 767px) {
+  .container{
+    flex-direction: column;
+  }
+  .main {
+    margin-top: 20px;
+    display: block;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+}

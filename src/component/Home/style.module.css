@@ -87,16 +87,13 @@
   .container {
     display: block;
     width: 88%;
-    margin: 0px;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
     height: auto;
   }
-  .left{
+  .left {
     width: 100%;
   }
-  .right{
+  .right {
     width: 95%;
     margin: auto;
   }
