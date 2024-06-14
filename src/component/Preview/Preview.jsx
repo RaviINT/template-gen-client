@@ -95,7 +95,7 @@ function Preview() {
       // Create a link element, set the download attribute, and trigger the download
       const link = document.createElement("a");
       link.href = videoBlobUrl;
-      link.download = "video.mp4"; // You can set a dynamic filename if needed
+      link.download = "image.png"; // You can set a dynamic filename if needed
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
