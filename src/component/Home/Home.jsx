@@ -66,8 +66,8 @@ function Home() {
 
         if (response.ok) {
           const data = await response.json();
-          const url = data.url;
-          localStorage.setItem("GreetingVideo", url);
+
+          localStorage.setItem("GreetingVideo", JSON.stringify(data));
           navigate("/preview");
         } else {
           console.error("Failed to get the pre-signed URL for the edited video");
