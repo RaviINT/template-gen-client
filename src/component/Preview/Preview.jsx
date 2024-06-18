@@ -1,13 +1,16 @@
 import React from "react";
 import styles from "./style.module.css";
 import DwnButton from "../Button/Button";
+import axios from "axios";
 function Preview() {
-  const url = JSON.parse(localStorage.getItem("GreetingVideo"))
+  const url = JSON.parse(localStorage.getItem("GreetingVideo"));
 
   const shareLink = async () => {
+    const response = await axios.get(`https://tinyurl.com/api-create.php?url=${encodeURIComponent(url.videoUrl)}`);
+
     let shareData = {
       text: "#SecondBirthDate",
-      url: url.videoUrl,
+      url: response.data,
     };
 
     await navigator.share(shareData, {
